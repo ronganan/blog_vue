@@ -1,0 +1,124 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei", Verdana, Geneva, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+/*滚动条样式*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html {
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+  min-height: 600px;
+  font-size:100px;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-family: "Microsoft Yahei", Verdana, Geneva, sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #2c3e50;
+}
+a,
+select:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+input:focus,
+input.form-control:focus,
+.btn:active {
+  box-shadow: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+img[src=""] {
+  opacity: 0;
+}
+#app {
+  height:100%;
+  color: #fff;
+  /*全局清浮动*/
+  .clearfix:after {
+    content: ""; //设置内容为空
+    display: table;
+    height: 0; //高度为0
+    line-height: 0; //行高为0
+    display: block; //将文本转为块级元素
+    clear: both;//清除浮动;
+  }
+  .clearfix {
+    zoom: 1; //为了兼容IE
+  }
+  /*全局左右浮动*/
+  .pull-left {
+    float: left !important;
+  }
+  .pull-right {
+    float: right !important;
+  }
+  .datetimepicker.datetimepicker-date .form-control{
+    background: transparent;
+  }
+  // 必填项
+  .required-text{
+    display: inline-block;
+    margin-right: 3px;
+    color: red;
+  }
+  // 文本溢出显示
+  .text-overflow{
+    width:100%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+}
