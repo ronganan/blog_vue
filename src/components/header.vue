@@ -5,7 +5,7 @@
         <router-link to="/home">home</router-link>
       </li>
       <li>
-        <router-link to="/write">othre</router-link>
+        <router-link to="/write">other</router-link>
       </li>
       <!-- <li>技术</li>
       <li>随笔</li>

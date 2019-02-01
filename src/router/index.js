@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import login from 'pages/user/login'
 import home from 'pages/home'
-import write from 'pages/write'
+import record from 'pages/record'
 
 Vue.use(Router)
 
@@ -23,9 +23,9 @@ export default new Router({
         title: "首页"
       }
     },{
-      path: '/write',
-      name: 'write',
-      component: write,
+      path: '/record',
+      name: 'record',
+      component: record,
       meta: {
         title: "记录"
       }

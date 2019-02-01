@@ -1,11 +1,11 @@
 <template>
   <div class="hello">
-    <!-- <h1>{{ msg }}</h1> -->
+    <img class="rong" src="../../assets/image/logo.png" alt="">
     <div class="middle">
       <label for="">账号：</label><el-input title="账号" v-model="account" class="account"></el-input><br>
       <label for="">密码：</label><el-input title="密码" type="password" v-model="pwd" class="pwd"></el-input>
     </div><br>
-    <el-button type="primary" @click="login">登录</el-button>
+    <el-button type="primary" class="login" @click="login">登录</el-button>
   </div>
 </template>
 <script>
@@ -28,7 +28,7 @@ export default {
         return;
       }
       loginService.login({account: this.account, pwd: md5(this.pwd)}).then( res => {
-        if (res.resultCode = 200 && res.data.status == "success") {
+        if (res.resultCode === 200 && res.data.status === "success") {
           this.$notify({
             title: '登录成功',
             // message: '登录成功！',
@@ -42,11 +42,6 @@ export default {
             type: 'error'
           })
         }
-      }).catch( err => {
-        this.$notify({
-          title: err.resultMessage,
-          type: 'error'
-        })
       })
     }
   }
@@ -54,19 +49,23 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-h1,
-h2 {
-  font-weight: normal;
-}
 .hello {
+  padding-top: .5rem;
   width: 100%;
   height: 100%;
+  .rong {
+    width: 1.2rem;
+    margin: .5rem;
+  }
   .middle {
     width: 4rem;
     margin: 0 auto;
+    label {
+      margin-right: .1rem; 
+    }
     .el-input{
       width: 60%;
-      margin: 10px 0;
+      margin: .15rem 0;
     }
   }
   .el-button {

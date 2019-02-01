@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     writeHandler() {
-      this.$router.push("/write");
+      this.$router.push("/record");
     }
   }
 };
