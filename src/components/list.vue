@@ -1,8 +1,8 @@
 <template>
   <div class="list" v-loading="loading">
     <div class="container ql-container ql-snow" v-for="item in listData">
-      <h3 class="title">{{item.title}}</h3>
-      <h4 class="type">{{item.type}}</h4>
+      <h3 class="title left">{{item.title}}</h3>
+      <h4 class="time left">发布时间：{{item.createTime}}</h4>
       <p class="content ql-editor" v-html="item.content"></p>
     </div>
     <el-pagination
@@ -60,11 +60,12 @@ export default {
 	margin: 0.2rem 0;
   .container {
 		padding-top: 0.5rem;
-		width: 50%;
+		width: 45%;
 		margin: 0 auto;
 		border: none;
     .title {
       font-size: .35rem;
+      text-align: left;
     }
   }
   .container:hover {
