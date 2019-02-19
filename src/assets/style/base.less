@@ -124,7 +124,7 @@ img[src=""] {
     text-rendering: optimizelegibility;
   }
   .ql-editor {
-    padding: .2rem 0;
+    padding: .16rem;
   }
   .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
     font-weight: 700;
@@ -142,7 +142,7 @@ img[src=""] {
     overflow: auto;
   }
   .ql-editor pre {
-    padding: .2rem;
+    padding: .15rem;
     font-family: Menlo,Monaco,Consolas,Courier New,monospace;
   }
   .ql-editor li {
@@ -151,5 +151,8 @@ img[src=""] {
   .ql-snow .ql-editor code {
     color: #c7254e;
     border-radius: 4px;
+  }
+  .ql-editor.ql-blank::before {
+      margin-top: 0.1rem;
   }
 }

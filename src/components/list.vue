@@ -60,7 +60,7 @@ export default {
 	margin: 0.2rem 0;
   .container {
 		padding-top: 0.5rem;
-		width: 45%;
+		width: 46%;
 		margin: 0 auto;
 		border: none;
     .title {
